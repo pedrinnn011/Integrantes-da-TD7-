@@ -1,88 +1,32 @@
-<!DOCTYPE html><html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reconhecimento - TD7 SPORTS ³</title>
-  <style>
-    body {
-      background: black;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 2rem;
-    }h1 {
-  font-size: 2.5rem;
-  color: red;
-  text-shadow: 0 0 10px red, 0 0 20px crimson;
-}
+<!-- FORMULÁRIO TD7 - ENVIO PARA OS LÍDERES -->
+<section style="background-color: #0a0a0a; padding: 40px; border-radius: 20px; box-shadow: 0 0 25px red; max-width: 500px; margin: 40px auto;">
+  <h2 style="color: red; font-size: 30px; text-align: center; text-shadow: 0 0 15px red; margin-bottom: 20px;">
+    🔴 INTEGRANTES TD7 SPORTS³ 🔴
+  </h2>
+  <p style="color: #fff; text-align: center; margin-bottom: 30px;">
+    Envie seu <strong>Nick</strong> e <strong>WhatsApp</strong> para o reconhecimento oficial da guilda!  
+    Tudo será enviado automaticamente para a liderança da TD7 💚🔥
+  </p>
 
-select, input[type="text"], input[type="tel"] {
-  padding: 0.7rem;
-  margin: 1rem 0;
-  width: 80%;
-  max-width: 400px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-}
+  <form action="https://formsubmit.co/theuspmb@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+    <!-- ENVIO AUTOMÁTICO PARA DOIS E-MAILS -->
+    <input type="hidden" name="_cc" value="pedrocosta776622@gmail.com">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="📋 Novo reconhecimento TD7 SPORTS³">
+    <input type="hidden" name="_template" value="table">
 
-.form-container {
-  display: none;
-}
+    <div>
+      <label style="color: red; font-weight: bold;">Nick:</label>
+      <input type="text" name="Nick" required style="width: 100%; padding: 12px; border-radius: 8px; background-color: #1a1a1a; color: #fff; border: 1px solid red; box-shadow: 0 0 10px red inset;">
+    </div>
 
-.form-container.active {
-  display: block;
-  margin-top: 2rem;
-}
+    <div>
+      <label style="color: red; font-weight: bold;">Número de WhatsApp:</label>
+      <input type="tel" name="WhatsApp" required style="width: 100%; padding: 12px; border-radius: 8px; background-color: #1a1a1a; color: #fff; border: 1px solid red; box-shadow: 0 0 10px red inset;">
+    </div>
 
-button, input[type="submit"] {
-  background: red;
-  border: none;
-  padding: 1rem 2rem;
-  color: white;
-  border-radius: 10px;
-  font-size: 1rem;
-  text-shadow: 0 0 5px white;
-  cursor: pointer;
-  box-shadow: 0 0 10px red, 0 0 20px crimson;
-}
-
-  </style>
-</head>
-<body>
-  <h1>RECONHECIMENTO - TD7 SPORTS ³</h1><label for="guilda">Escolha sua guilda:</label><br> <select id="guilda" onchange="mostrarFormulario()"> <option value="">-- Selecione --</option> <option value="g1">Guilda 1</option> <option value="g2">Guilda 2</option> <option value="g3">Guilda 3</option> </select>
-
-  <!-- Formulário Guilda 1 -->  <div id="form-g1" class="form-container">
-    <form action="https://formsubmit.co/EMAIL_GUILDA1" method="POST">
-      <input type="text" name="nick" placeholder="Seu Nick" required><br>
-      <input type="tel" name="whatsapp" placeholder="WhatsApp" required><br>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://obrigado.td7sports.com">
-      <input type="submit" value="Enviar Reconhecimento">
-    </form>
-  </div>  <!-- Formulário Guilda 2 -->  <div id="form-g2" class="form-container">
-    <form action="https://formsubmit.co/EMAIL_GUILDA2" method="POST">
-      <input type="text" name="nick" placeholder="Seu Nick" required><br>
-      <input type="tel" name="whatsapp" placeholder="WhatsApp" required><br>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://obrigado.td7sports.com">
-      <input type="submit" value="Enviar Reconhecimento">
-    </form>
-  </div>  <!-- Formulário Guilda 3 -->  <div id="form-g3" class="form-container">
-    <form action="https://formsubmit.co/EMAIL_GUILDA3" method="POST">
-      <input type="text" name="nick" placeholder="Seu Nick" required><br>
-      <input type="tel" name="whatsapp" placeholder="WhatsApp" required><br>
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://obrigado.td7sports.com">
-      <input type="submit" value="Enviar Reconhecimento">
-    </form>
-  </div>  <script>
-    function mostrarFormulario() {
-      const selecionada = document.getElementById("guilda").value;
-      document.querySelectorAll(".form-container").forEach(div => div.classList.remove("active"));
-      if (selecionada) {
-        document.getElementById("form-" + selecionada).classList.add("active");
-      }
-    }
-  </script></body>
-</html>
+    <button type="submit" style="background-color: red; color: white; padding: 15px; font-size: 16px; border: none; border-radius: 10px; font-weight: bold; cursor: pointer; box-shadow: 0 0 20px red; transition: 0.3s ease;">
+      🚨 ENVIAR AGORA
+    </button>
+  </form>
+</section>
