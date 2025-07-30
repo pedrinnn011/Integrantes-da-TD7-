@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reconhecimento - TD7 SPORTS ³</title>
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }h1 {
+  font-size: 2.5rem;
+  color: red;
+  text-shadow: 0 0 10px red, 0 0 20px crimson;
+}
+
+select, input[type="text"], input[type="tel"] {
+  padding: 0.7rem;
+  margin: 1rem 0;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.form-container {
+  display: none;
+}
+
+.form-container.active {
+  display: block;
+  margin-top: 2rem;
+}
+
+button, input[type="submit"] {
+  background: red;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-shadow: 0 0 5px white;
+  cursor: pointer;
+  box-shadow: 0 0 10px red, 0 0 20px crimson;
+}
+
+  </style>
+</head>
+<body>
+  <h1>RECONHECIMENTO - TD7 SPORTS ³</h1><label for="guilda">Escolha sua guilda:</label><br> <select id="guilda" onchange="mostrarFormulario()"> <option value="">-- Selecione --</option> <option value="g1">Guilda 1</option> <option value="g2">Guilda 2</option> <option value="g3">Guilda 3</option> </select>
+
+  <!-- Formulário Guilda 1 -->  <div id="form-g1" class="form-container">
+    <form action="https://formsubmit.co/EMAIL_GUILDA1" method="POST">
+      <input type="text" name="nick" placeholder="Seu Nick" required><br>
+      <input type="tel" name="whatsapp" placeholder="WhatsApp" required><br>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://obrigado.td7sports.com">
+      <input type="submit" value="Enviar Reconhecimento">
+    </form>
+  </div>  <!-- Formulário Guilda 2 -->  <div id="form-g2" class="form-container">
+    <form action="https://formsubmit.co/EMAIL_GUILDA2" method="POST">
+      <input type="text" name="nick" placeholder="Seu Nick" required><br>
+      <input type="tel" name="whatsapp" placeholder="WhatsApp" required><br>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://obrigado.td7sports.com">
+      <input type="submit" value="Enviar Reconhecimento">
+    </form>
+  </div>  <!-- Formulário Guilda 3 -->  <div id="form-g3" class="form-container">
+    <form action="https://formsubmit.co/EMAIL_GUILDA3" method="POST">
+      <input type="text" name="nick" placeholder="Seu Nick" required><br>
+      <input type="tel" name="whatsapp" placeholder="WhatsApp" required><br>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://obrigado.td7sports.com">
+      <input type="submit" value="Enviar Reconhecimento">
+    </form>
+  </div>  <script>
+    function mostrarFormulario() {
+      const selecionada = document.getElementById("guilda").value;
+      document.querySelectorAll(".form-container").forEach(div => div.classList.remove("active"));
+      if (selecionada) {
+        document.getElementById("form-" + selecionada).classList.add("active");
+      }
+    }
+  </script></body>
+</html>
